@@ -18,9 +18,7 @@ func duplicateEncode(word string) string {
 		// if res == false {
 		// 	f = append(f, val)
 		// }
-		if val == "h" {
-			fmt.Printf("5c", val)
-		}
+		fmt.Println(val)
 
 	}
 	// fmt.Println(f)
