@@ -2,3 +2,11 @@ export PATH=$PATH:/usr/local/go/bin
 
 use nano to open the file
 nano ~/.bash_profile (something like this, confirm fess)
+
+
+
+export GOPATH=/home/uchencho/Documents/Golang-Projects
+
+
+previous gopath
+"/home/uchencho/go"
