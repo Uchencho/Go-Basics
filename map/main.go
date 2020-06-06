@@ -25,6 +25,9 @@ func main() {
 }
 
 func printMap(c map[string]string) {
+	// A receiver function that prints key value pairs for a map
+
+	// Loop through the map
 	for key, value := range c {
 		fmt.Println("Hex code for", key, "is", value)
 	}

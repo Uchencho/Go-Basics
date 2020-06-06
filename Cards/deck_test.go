@@ -1,5 +1,7 @@
 package main
 
+// To run this test on the terminal, use 'go test'
+
 import (
 	"os"
 	"testing"

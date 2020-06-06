@@ -46,7 +46,7 @@ func main() {
 func (logWriter) Write(bs []byte) (int, error) {
 	// Creating a function that has all the attributes of a Writter Interface
 	// Takes in a byte slice and returns an integer and an error msg, if any
-	// It is used as receiver function that can be appiled on a struct
+	// It is used as receiver function that can be applied on a struct
 
 	fmt.Println(string(bs))
 	fmt.Println("Just wrote this many bytes:", len(bs))
