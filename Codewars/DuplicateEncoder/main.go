@@ -18,6 +18,8 @@ func duplicateEncode(word string) string {
 		// if res == false {
 		// 	f = append(f, val)
 		// }
+		// Issue is Val is a rune and if i use &val, it becomes
+		// a memory location and not the exact value
 		fmt.Println(val)
 
 	}
