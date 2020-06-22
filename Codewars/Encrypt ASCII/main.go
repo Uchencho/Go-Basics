@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"strconv"
+	"strings"
 )
 
 func encryptThis(text string) string {
@@ -20,17 +22,27 @@ func encryptThis(text string) string {
 	// EncryptThis("good") == "103doo"
 	// EncryptThis("hello world") == "104olle 119drlo"
 
-	/*
-		I haven't solved this yet
-	*/
+	t := strings.Split(text, " ")
 
-	for i, v := range text {
-		fmt.Println(i, v)
+	f := ""
+	for _, item := range t {
+		for i, v := range item {
+			if i == 0 {
+				// Get the ascii character, append it to an empty string
+				f += strconv.Itoa(int(v))
+				continue
+			} else if i == 1 {
+				f += string(item[len(item)-1])
+				continue
+			} else if i == len(item)-1 {
+				f += string(item[1])
+				continue
+			}
+			f += string(v)
+		}
+		f += " "
 	}
-	// byteArray := []byte(text)
-
-	// fmt.Println(byteArray, string(byteArray))
-	return string(text)
+	return strings.TrimSpace(f)
 }
 
 func main() {
